@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian
 
 # Based on https://www.digitalocean.com/community/tutorials/how-to-set-up-an-osrm-server-on-ubuntu-14-04
 
