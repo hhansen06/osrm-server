@@ -35,3 +35,10 @@ COPY .stxxl  ~/osrm/.stxxl
 RUN ln -s /home/renderer/src/osrm-backend/profiles/car.lua ~/osrm/profile.lua
 RUN ln -s /home/renderer/src/osrm-backend/profiles/lib ~/osrm/lib
 
+
+# configre run script
+USER root
+COPY run.sh /
+ENTRYPOINT ["/run.sh"]
+CMD []
+
