@@ -22,8 +22,10 @@ WORKDIR /home/renderer/src/osrm-backend
 RUN mkdir build
 WORKDIR /home/renderer/src/osrm-backend/build
 RUN cmake ..
-RUN sudo make install
-
+USER root
+WORKDIR /home/renderer/src/osrm-backend/build
+RUN make install
+USER renderer
 
 # configure stxxl
 RUN mkdir ~/osrm
