@@ -39,6 +39,7 @@ RUN ln -s /home/renderer/src/osrm-backend/profiles/lib ~/osrm/lib
 # configre run script
 USER root
 COPY run.sh /
+RUN chmod +x /run.sh
 ENTRYPOINT ["/run.sh"]
 CMD []
 
