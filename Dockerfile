@@ -43,6 +43,6 @@ RUN apt-get install -y wget
 USER root
 COPY run.sh /
 RUN chmod +x /run.sh
-ENTRYPOINT ["/run.sh"]
+#ENTRYPOINT ["/run.sh"]
 CMD []
 
