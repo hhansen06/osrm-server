@@ -17,3 +17,4 @@ fi
 
 
 /usr/local/bin/osrm-routed -p 5000 map.osrm
+exit 1
