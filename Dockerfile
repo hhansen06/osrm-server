@@ -31,3 +31,7 @@ USER renderer
 RUN mkdir ~/osrm
 COPY .stxxl  ~/osrm/.stxxl
 
+# configure car profile
+RUN ln -s /home/renderer/src/osrm-backend/profiles/car.lua ~/osrm/profile.lua
+RUN ln -s /home/renderer/src/osrm-backend/profiles/lib ~/osrm/lib
+
