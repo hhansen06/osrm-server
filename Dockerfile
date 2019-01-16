@@ -36,7 +36,7 @@ RUN ln -s /home/renderer/src/osrm-backend/profiles/lib ~/osrm/lib
 
 # forgotten things ..
 USER root
-RUN apt-get install -y wget
+RUN apt-get install -y wget htop
 
 
 # configre run script
