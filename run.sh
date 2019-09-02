@@ -16,5 +16,5 @@ if [ ! -f /home/renderer/osrm/firststart ]; then
     touch /home/renderer/osrm/firststart
 fi
 
-osrm-routed --algorithm mld data.osrm
+osrm-routed --max-trip-size 1000 --max-table-size 1000 --max-nearest-size 1000 --max-viaroute-size 1000 --algorithm mld data.osrm
 exit 0
